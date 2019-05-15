@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class UserTest {
 
     @Test
-    void UserTest() {
+    void userTest() {
         Assertions.assertTrue(true);
     }
 
