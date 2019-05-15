@@ -2,6 +2,10 @@ pipeline {
     agent any
 
     stages {
+		stage('Initialize') {
+			def mavenHome  = tool 'my_maven'
+			env.PATH = "${mavenHome}/bin:${env.PATH}"
+		}
         stage('Build') {
             steps {
                 echo 'Building..'
