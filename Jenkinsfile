@@ -10,9 +10,18 @@ pipeline {
             steps {
                 echo 'Building..'
 				sh 'mvn compile'
-				sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
             }
         }
+		stage('SonarQube analysis') {
+		steps {
+        script {
+          scannerHome = tool 'my_sonarqube'
+        }
+        withSonarQubeEnv('my_sonarqubeserver') {
+          sh "${scannerHome}/bin/sonar-scanner"
+        }
+      }
+    }
         stage('Test') {
             steps {
                 echo 'Testing..'
