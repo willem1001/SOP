@@ -3,8 +3,10 @@ pipeline {
 
     stages {
 		stage('Initialize') {
-			def mavenHome  = tool 'my_maven'
-			env.PATH = "${mavenHome}/bin:${env.PATH}"
+			def JAVA_HOME = tool 'my_jdk'
+			def MAVEN_HOME  = tool 'my_maven'
+			env.PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${env.PATH}"
+    }
 		}
         stage('Build') {
             steps {
