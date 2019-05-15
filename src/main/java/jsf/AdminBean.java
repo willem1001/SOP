@@ -4,10 +4,7 @@ import dao.PostDao;
 import dao.UserDao;
 import enums.PostType;
 import enums.UserRole;
-import javafx.geometry.Pos;
-import models.post.Comment;
 import models.post.Post;
-import models.post.Tweet;
 import models.user.User;
 
 import javax.faces.bean.ManagedBean;
