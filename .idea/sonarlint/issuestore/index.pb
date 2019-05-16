@@ -49,3 +49,5 @@ P
  src/main/java/jsf/LoginBean.java,0\e\0edbbfe56eb9a39197b560def8711698411cc183
 P
  src/main/java/jsf/AdminBean.java,6\0\600034d33c5b14da758e997075493b209c804c33
+K
+src/test/java/UserTest.java,d\a\da17b786f51da7245c1b8003270a586b3dfe3906
