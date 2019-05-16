@@ -13,9 +13,9 @@ services:
     image: "sonarqube"
     ports:
       - 9000:9000
-   # environment: # Change these
-      #- "sonar.jdbc.username=sonar" 
-      #- "sonar.jdbc.password=sonar"
+    environment: # Change these
+      - "sonar.jdbc.username=admin" 
+      - "sonar.jdbc.password=admin"
       #- "sonar.jdbc.url=jdbc:mysql://localhost"
     #
     volumes:
