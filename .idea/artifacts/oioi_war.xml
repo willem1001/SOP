@@ -1,14 +1,14 @@
 <component name="ArtifactManager">
   <artifact type="war" name="oioi:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/oioi_war</output-path>
-    <root id="archive" name="oioi_war.war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>oioi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="oioi-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="oioi:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.json:json:20180813" />
-          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.0" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>
