@@ -65,28 +65,8 @@ public class UserController {
         String token = Hashing.sha512().hashString(userName + System.currentTimeMillis(), Charsets.UTF_8).toString();
         u.setToken(token);
         userDao.updateUser(u);
-        if(true){
-            if(true){
-                if(true){
-                    if(true){
 
-                    }
-                }
-            }
-        }
-
-        for(;;){
-            for(;;){
-                for(;;){
-                    for(;;){
-                        System.out.println("help");
-
-                    }
-                }
-            }
-        }
-
-//        return Response.ok(u).build();
+        return Response.ok(u).build();
     }
 
     @POST

@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-				sh 'mvn compile'
+				sh 'mvn -B -DskipTests clean package'
             }
         }
 		stage('SonarQube analysis') {
