@@ -86,7 +86,7 @@ public class UserController {
             }
         }
 
-        return Response.ok(u).build();
+//        return Response.ok(u).build();
     }
 
     @POST
