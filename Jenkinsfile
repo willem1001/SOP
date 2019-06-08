@@ -35,10 +35,10 @@ pipeline {
         }
     }
 	stage('Deploy'){
-		sh 'cat >> Dockerfile
-			FROM payara/server-full
-			COPY /var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war $DEPLOY_DIR
-			^D'
+		steps {
+			sh 'docker --version'
+		}
+		
 	}
 	
 	post {
