@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'my_docker' }
 	
 	tools {
 		maven 'my_maven'
