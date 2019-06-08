@@ -28,11 +28,7 @@ pipeline {
 				sh 'mvn test'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        
 		stage('Deploy'){
 		steps {
 			sh 'docker --version'
