@@ -34,6 +34,13 @@ pipeline {
             }
         }
     }
+	stage('Deploy'){
+		sh 'cat >> Dockerfile
+			FROM payara/server-full
+			COPY /var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war $DEPLOY_DIR
+			^D'
+	}
+	
 	post {
 	    always {
            emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
