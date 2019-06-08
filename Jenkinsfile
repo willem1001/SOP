@@ -33,13 +33,14 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-    }
-	stage('Deploy'){
+		stage('Deploy'){
 		steps {
 			sh 'docker --version'
 		}
 		
-	}
+		}
+    }
+	
 	
 	post {
 	    always {
