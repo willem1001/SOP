@@ -34,11 +34,6 @@ pipeline {
 			steps {
 				sh 'docker --version'
 				writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY /var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
-				
-				#sh 'sudo groupadd docker'
-				#sh 'sudo usermod -a -G docker jenkins'
-				#sh 'sudo docker build --tag=payarasop .'
-				#sh 'sudo docker run -p 8080:8080 -p 4848:4848 payarasop'
 			}
 		}
     }
