@@ -12,16 +12,16 @@ pipeline {
 				sh 'mvn compile'
             }
         }
-		stage('SonarQube analysis') {
+		/*stage('SonarQube analysis') {
 		steps {
-        //script {
-        //  scannerHome = tool 'my_sonarqube'
-        //}
-        //withSonarQubeEnv('my_sonarqubeserver') {
-        //  sh "${scannerHome}/bin/sonar-scanner"
+        script {
+          scannerHome = tool 'my_sonarqube'
+        }
+        withSonarQubeEnv('my_sonarqubeserver') {
+          sh "${scannerHome}/bin/sonar-scanner"
         }
       }
-    }
+    }*/
         stage('Test') {
             steps {
                 echo 'Testing..'
