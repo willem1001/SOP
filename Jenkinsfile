@@ -31,7 +31,6 @@ pipeline {
         
 		stage('Deploy'){
 			steps {
-				sh 'docker run hello-world)'
 				sh 'docker --version'
 				writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY /var/jenkins_home/workspace/Kwetter_master/target/oioi-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
 				sh 'docker build --tag=payarasop /var/jenkins_home/workspace/Kwetter_master'
