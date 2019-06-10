@@ -31,16 +31,15 @@ pipeline {
         
 		stage('Create Dockerfile'){
 			steps {
-                sh 'ls /var/jenkins_home/workspace/Kwetter_Pipeline_master/target/'
 				writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY ./oioi-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
                 sh 'docker cp jenkins:/var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war .'
 			}
 		}
         stage('Run Dockerfile'){
             steps {
+                sh 'docker stop payaracontainer || true && docker rm payaracontainer || true'
                 sh 'docker build --tag=payarasop /var/jenkins_home/workspace/Kwetter_Pipeline_master/'
-                sh 'echo donebuilding'
-			    sh 'docker run -p 8080:8080 -p 4848:4848 payarasop'
+			    sh 'docker run -p 8080:8080 -p 4848:4848 payarasop --name payaracontainer'
             }
             
         }
