@@ -19,7 +19,7 @@ pipeline {
         //}
         //withSonarQubeEnv('my_sonarqubeserver') {
         //  sh "${scannerHome}/bin/sonar-scanner"
-        //}
+        }
       }
     }
         stage('Test') {
