@@ -25,3 +25,5 @@ hs_err_pid*
 \.idea/workspace\.xml
 
 \.idea/sonarIssues\.xml
+
+target/oioi-1\.0-SNAPSHOT/META-INF/MANIFEST\.MF
