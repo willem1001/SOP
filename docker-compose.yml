@@ -7,7 +7,7 @@ services:
       - 8084:8080
       - 5050:5000
     volumes:
-      - ~Desktop/SOPDATA/SOP_Jenkins:/var/jenkins_home
+      - ~/Desktop/SOPDATA/SOP_Jenkins:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
   sonarqube:
     container_name: "sonarqube"
@@ -15,7 +15,7 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - ~Desktop/SOPDATA/SOP_Sonarqube/conf:/opt/sonarqube/conf
-      - ~Desktop/SOPDATA/SOP_Sonarqube/data:/opt/sonarqube/data
-      - ~Desktop/SOPDATA/SOP_Sonarqube/extentions:/opt/sonarqube/extensions
+      - ~/Desktop/SOPDATA/SOP_Sonarqube/conf:/opt/sonarqube/conf
+      - ~/Desktop/SOPDATA/SOP_Sonarqube/data:/opt/sonarqube/data
+      - ~/Desktop/SOPDATA/SOP_Sonarqube/extentions:/opt/sonarqube/extensions
 #gitlab, junit, maven, jfrog artifactory
