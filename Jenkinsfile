@@ -40,7 +40,8 @@ pipeline {
             steps {
                 sh 'cd '
                 sh 'docker build --tag=payarasop /var/jenkins_home/workspace/Kwetter_Pipeline_master'
-			    sh 'docker run -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 -p 4848:4848 payarasop'
+                sh 'echo donebuilding'
+			    sh 'docker run -v ~/Desktop/SOPDATA/SOP_Jenkins:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 -p 4848:4848 payarasop'
             }
             
         }
