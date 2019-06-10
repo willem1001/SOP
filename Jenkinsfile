@@ -34,7 +34,7 @@ pipeline {
 				sh 'docker --version'
 				//writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
 				sh 'echo Done.writing'
-                sh 'docker cp jenkins:var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war /'
+                sh 'sudo docker cp jenkins:var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war /'
 			}
 		}
         stage('Run Dockerfile'){
