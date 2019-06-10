@@ -32,6 +32,8 @@ pipeline {
 		stage('Create Dockerfile'){
 			steps {
 				sh 'docker --version'
+                sh 'cd /workspace/Kwetter_Pipeline_master/target/'
+                sh 'ls'
 				writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY /workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
 				sh 'echo Done.writing'
                 
