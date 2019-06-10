@@ -38,7 +38,7 @@ pipeline {
 		}
         stage('Run Dockerfile'){
             steps {
-                sh 'cd /var/jenkins_home/workspace/Kwetter_Pipeline_master/target'
+                sh 'cd /var/jenkins_home/workspace/Kwetter_Pipeline_master/target/'
                 sh 'ls'
                 sh 'docker build --tag=payarasop /var/jenkins_home/workspace/Kwetter_Pipeline_master'
                 sh 'echo donebuilding'
