@@ -37,8 +37,11 @@ pipeline {
 			}
 		}
         stage('Run Dockerfile'){
-            sh 'docker build --tag=payarasop /var/jenkins_home/workspace/Kwetter_Pipeline_master'
-			sh 'docker run -p 8080:8080 -p 4848:4848 payarasop'
+            steps {
+                sh 'docker build --tag=payarasop /var/jenkins_home/workspace/Kwetter_Pipeline_master'
+			    sh 'docker run -p 8080:8080 -p 4848:4848 payarasop'
+            }
+            
         }
     }
 	
