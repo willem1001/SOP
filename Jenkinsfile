@@ -12,7 +12,7 @@ pipeline {
 				sh 'mvn package'
             }
         }
-		/*stage('SonarQube analysis') {
+		stage('SonarQube analysis') {
 		steps {
         script {
           scannerHome = tool 'my_sonarqube'
@@ -21,7 +21,7 @@ pipeline {
           sh "${scannerHome}/bin/sonar-scanner"
         }
       }
-    }*/
+    }
         stage('Test') {
             steps { 
                 echo 'Testing..'
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 sh 'docker stop payaracontainer || true && docker rm payaracontainer || true'
                 sh 'docker build -t=payarasop /var/jenkins_home/workspace/Kwetter_Pipeline_master/'
-			    sh 'docker run --name payaracontainer -p 8080:8080 -p 4848:4848 payarasop'
+			    sh 'docker run -d --name payaracontainer -p 8080:8080 -p 4848:4848 payarasop'
             }
             
         }
