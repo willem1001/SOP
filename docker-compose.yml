@@ -18,4 +18,7 @@ services:
       - ~/Desktop/SOPDATA/SOP_Sonarqube/conf:/opt/sonarqube/conf
       - ~/Desktop/SOPDATA/SOP_Sonarqube/data:/opt/sonarqube/data
       - ~/Desktop/SOPDATA/SOP_Sonarqube/extentions:/opt/sonarqube/extensions
+    links:
+     - "jenkins:jenkins"
+
 #gitlab, junit, maven, jfrog artifactory
