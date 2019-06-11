@@ -14,14 +14,14 @@ pipeline {
         }
         stage('SonarQube analysis') {
             steps {
-                scannerHome = tool 'my_sonar';
-                withSonarQubeEnv('My SonarQube Server') {
+            script {
+                def scannerHome = tool 'my_sonarqube'
+            }
+                withSonarQubeEnv('my_sonarqubeserver') {
                 sh "${scannerHome}/bin/sonar-scanner"
             }
-            // requires SonarQube Scanner 2.8+
-
             }
-         }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
