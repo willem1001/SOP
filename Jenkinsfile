@@ -12,7 +12,7 @@ pipeline {
 				sh 'mvn package'
             }
         }
-		stage('SonarQube analysis') {
+		/*stage('SonarQube analysis') {
 		steps {
         script {
           scannerHome = tool 'my_sonarqube'
@@ -21,7 +21,7 @@ pipeline {
           sh "${scannerHome}/bin/sonar-scanner"
         }
       }
-    }
+    }*/
         stage('Test') {
             steps { 
                 echo 'Testing..'
