@@ -19,6 +19,7 @@ pipeline {
         }
         withSonarQubeEnv('my_sonarqubeserver') {
           sh "${scannerHome}/bin/sonar-scanner"
+          sh "sleep 10"
         }
       }
     }
