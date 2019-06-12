@@ -1,21 +1,0 @@
-
-Isquid:S1168"+Return an empty collection instead of null.(¥¹ï8ûç—Ú´-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(à¯›÷üÿÿÿÿ8§ ˜Ú´-
-isquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ùòœ8ğ¶™Ú´-
-[squid:UselessImportCheck"0Remove this unused import 'javax.inject.Inject'.(ì–íÔ8§Ù–Ú´-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÊÖ‰8·¦—Ú´-
-nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(È·Å¥ıÿÿÿÿ8ÜËšÚ´-
-Isquid:S1168 "+Return an empty collection instead of null.(¥¹ï8±Î˜Ú´-
-Isquid:S11682"+Return an empty collection instead of null.(¥¹ï8ŠëšÚ´-
-Zsquid:UselessImportCheck"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¾Î²Ûûÿÿÿÿ8ûç—Ú´-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬Ó×„ıÿÿÿÿ8±Î˜Ú´-
-Gsquid:S1172")Remove this unused method parameter "id".(ğöˆ8·¦—Ú´-
-Qsquid:S1172".Remove this unused method parameter "content".(ü’Ÿ›úÿÿÿÿ8±Î˜Ú´-
-Osquid:S1172",Remove this unused method parameter "tweet".(ş­åıÿÿÿÿ8§ ˜Ú´-
-nsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(­¿Âãıÿÿÿÿ8Á”™Ú´-
-Psquid:S1172,"-Remove this unused method parameter "userId".(äšÙ·ûÿÿÿÿ8§ä™Ú´-
-Osquid:S11720"1Remove this unused method parameter "searchTerm".(µæÖÁ8ŠëšÚ´-
-isquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(¤‘È½8§ä™Ú´-
-esquid:UselessImportCheck"<Remove this unused import 'javax.transaction.Transactional'.(ûÒçÑúÿÿÿÿ
-Isquid:S1168-"+Return an empty collection instead of null.(¤‘È½8§ä™Ú´-

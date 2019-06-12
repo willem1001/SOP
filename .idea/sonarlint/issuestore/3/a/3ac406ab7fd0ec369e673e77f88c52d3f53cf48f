@@ -1,10 +1,0 @@
-
-[squid:UselessImportCheck"0Remove this unused import 'javax.inject.Inject'.(ì–íÔ8äã«Ú´-
-xsquid:S2293©"YReplace the type specification in this constructor call with the diamond operator ("<>").(©ñ×¦8²”•Ô´-
-}squid:S2293¡"YReplace the type specification in this constructor call with the diamond operator ("<>").(—•×íüÿÿÿÿ8²”•Ô´-
-xsquid:S2293±"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆÃĞÛ8²”•Ô´-
-vsquid:S3776Œ"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(å™ø“øÿÿÿÿ8²”•Ô´-
-¨squid:S18625"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(òØæŸøÿÿÿÿ8°à•Ô´-
-jsquid:S1764"KCorrect one of the identical sub-expressions on both sides of operator "=="(¨›†¦8²”•Ô´-
-Ysquid:UselessImportCheck"/Remove this unused import 'java.sql.Timestamp'.(èò½+8²”•Ô´-
-·%squid:RedundantThrowsDeclarationCheck#"Remove the declaration of thrown exception 'java.security.GeneralSecurityException', as it cannot be thrown from method's body.(Æ®‚ı8Á“™Ô´-
