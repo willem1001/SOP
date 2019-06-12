@@ -11,7 +11,6 @@ import java.util.List;
 @ApplicationScoped
 public class TweetDAOImpl implements TweetDAO{
 
-    private EntityManager em;
 
     public Tweet findById(long id) {
        // return em.find(Tweet.class,id);
