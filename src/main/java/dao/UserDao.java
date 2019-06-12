@@ -1,28 +1,31 @@
 package dao;
 
-import models.user.User;
+import model.User;
+
 import java.util.List;
 
-public interface UserDao {
-    User createUser(User user);
+public interface UserDAO {
+    User findById(long id);
 
-    User updateUser(User user);
+    User findByUsername(String username);
 
-    void removeUser(User user);
+    List<User> findAll();
 
-    User login(String userName, String password);
+    User create(User user);
 
-    User getUserById(Long id);
+    void update(User user);
 
-    User getUserByUserName(String userName);
+    void delete(User user);
 
-    List<User> getFollowers(Long id);
+    User login(User user);
 
-    List<User> getFollowing(Long id);
+    List getFollowers(long userId);
 
-    List<User> getAllUsers();
+    List getFollowing(long userId);
 
-    boolean checkToken(Long id, String token);
+    List<String> authorize(String token, String username);
 
-    List<User> searchUsers(String searchQuery);
+    List<Object> search(String searchTerm);
+
+
 }

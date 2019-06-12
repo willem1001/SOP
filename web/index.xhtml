@@ -1,21 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
-  <h:body>
-    <h1> Admin Panel Login </h1>
-
-    <h:form>
-      <p> Username : <h:inputText value="${loginBean.userName}"/> </p>
-      <p> Password : <h:inputSecret value="${loginBean.password}"/> </p>
-
-      <h:commandButton value="Login" action="${loginBean.login()}"/>
-      <div>
-        <h:outputLabel value="${loginBean}"/>
-      </div>
-    </h:form>
-  </h:body>
-
+    <h:head>
+        <!--<h:outputStylesheet library="css" name="style.css"/>-->
+    </h:head>
+    <h:body>
+        <h1> Aangepaste Admin Panel Login </h1>
+        <h:form>
+            <p> Username : <h:inputText value="${loginBacking.username}"/> </p>
+            <p> Password : <h:inputSecret value="${loginBacking.password}"/> </p>
+            <h:commandButton value="Login" action="${loginBacking.redirectLogin()}"/>
+            <div>
+                <h:outputLabel value="${loginBacking.errorMessage}"/>
+            </div>
+        </h:form>
+    </h:body>
 </f:view>
 </html>
