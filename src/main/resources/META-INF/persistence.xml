@@ -6,7 +6,7 @@
 
 
 
-    <persistence-unit name="KwetterInMem" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="KwetterPU" transaction-type="RESOURCE_LOCAL">
 
         <class>model.Tweet</class>
         <class>model.User</class>
