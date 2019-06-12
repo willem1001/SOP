@@ -1,36 +1,27 @@
 package model;
 
-import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+
 public class Tweet {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
 
-    @Column(name = "parentId", nullable = true)
     private long parentId;
 
-    @Column(name = "content", length = 140,nullable = false)
     private String content;
 
-    @Column(name = "creationDate",nullable = false)
     private Timestamp creationDate;
 
     //@ManyToOne(cascade = CascadeType.REFRESH)
     //private User user;
 
-    @Column(name="userId")
     private long userId;
 
-    @ElementCollection
     private List<Long> replyIds = new ArrayList<Long>();
 
-    @ElementCollection
     private List<Long> likeIds = new ArrayList<Long>();
 
     private PostType postType;
