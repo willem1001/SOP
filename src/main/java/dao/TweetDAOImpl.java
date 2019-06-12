@@ -45,7 +45,6 @@ public class TweetDAOImpl implements TweetDAO{
         //}
         //em.merge(t);
         //em.flush();
-        return null;
     }
 
     
@@ -53,7 +52,6 @@ public class TweetDAOImpl implements TweetDAO{
       //  Tweet t = null;
       //  t = em.merge(tweet);
       //  em.remove(t);
-      return null;
     }
 
     public List<Tweet> getAllByUser(User user) {
