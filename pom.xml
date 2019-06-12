@@ -7,7 +7,7 @@
     <groupId>com.valkenburg</groupId>
     <artifactId>Kwetter</artifactId>
     <version>1</version>
-    <packaging>war<packaging>
+    <packaging>war</packaging>
     <build>
         <plugins>
             <plugin>
