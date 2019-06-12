@@ -61,9 +61,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <groupId>com.com</groupId>
-    <artifactId>SOP</artifactId>
-    <version>1.0-SNAPSHOT</version>
+ 
 
     
 </project>
