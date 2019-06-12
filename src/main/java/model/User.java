@@ -1,61 +1,38 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Entity
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private long id;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "role")
     private Role role;
 
-    @Column(name="username",nullable = false,unique = true,length = 30)
     private String username;
 
-    @Column(name = "password",nullable = false,length = 255)
     private String password;
 
-    @Column(name = "location")
     private String location;
 
-    @Column (name = "token")
     private String token;
 
-    @Column(name = "website")
     private String website;
-
-    @Column(name = "bio")
     private String bio;
 
-    @Column(name = "avatar")
     private String avatar;
 
-    @Column(name= "secretKey")
     private String secretKey;
-
-    @Column(name="twoFactor")
     private boolean twoFactor;
 
-    @Column(name="authCode")
     private int authCode;
 
-    @ElementCollection
     private List<Long> followerIds = new ArrayList<Long>();
 
-    @ElementCollection
     private List<Long> followingIds = new ArrayList<Long>();
 
-    @ElementCollection
     private List<Long> tweetIds = new ArrayList<Long>();
 
 
