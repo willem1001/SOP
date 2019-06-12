@@ -12,6 +12,12 @@ pipeline {
                 sh 'mvn package'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+                sh 'mvn test'
+            }
+        }
         stage('SonarQube analysis') {
         steps {
         script {
@@ -31,12 +37,7 @@ pipeline {
 
             }
           }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-                sh 'mvn test'
-            }
-        }
+        
 
         stage('Create Dockerfile'){
             steps {
