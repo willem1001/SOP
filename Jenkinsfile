@@ -40,8 +40,8 @@ pipeline {
 
         stage('Create Dockerfile'){
             steps {
-                writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY ./oioi-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
-                sh 'docker cp jenkins:/var/jenkins_home/workspace/Kwetter_Pipeline_master/target/oioi-1.0-SNAPSHOT.war .'
+                writeFile(file: 'Dockerfile', text: 'FROM payara/server-full \nCOPY ./Kwetter-1.0-SNAPSHOT.war $DEPLOY_DIR', encoding: 'UTF-8')
+                sh 'docker cp jenkins:/var/jenkins_home/workspace/Kwetter_Pipeline_master/target/Kwetter-1.0-SNAPSHOT.war .'
             }
         }
         stage('Run Dockerfile'){
