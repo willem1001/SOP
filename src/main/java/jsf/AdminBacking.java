@@ -1,7 +1,5 @@
 package jsf;
 
-import dao.TweetDAO;
-import dao.UserDAO;
 import manager.TweetManager;
 import manager.UserManager;
 import model.Role;
@@ -14,15 +12,8 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
 
-@Named
-@SessionScoped
 public class AdminBacking implements Serializable {
 
-    @Inject
-    UserDAO userDao;
-
-    @Inject
-    TweetDAO tweetDAO;
 
     private int tweetId;
     private String username;
@@ -84,22 +75,22 @@ public class AdminBacking implements Serializable {
     }
 
     public void init() {
-        users = userDao.findAll();
+        //users = userDao.findAll();
     }
 
     // Delete messages
     public void deleteTweet(int id) {
-        Tweet tweet = tweetDAO.findById(id);
-       tweetDAO.delete(tweet);
+        //Tweet tweet = tweetDAO.findById(id);
+       //tweetDAO.delete(tweet);
 
     }
 
     // Assign new role to user
     public void assignRole(String username, Role role) {
-        System.out.println("alert");
+       /* System.out.println("alert");
         User user = userDao.findByUsername(username);
         user.setRole(role);
-        userDao.update(user);
+        userDao.update(user);*/
     }
 
 

@@ -1,6 +1,6 @@
 package manager;
 
-import dao.UserDAO;
+
 import mail.EmailSender;
 import model.User;
 
@@ -17,25 +17,25 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-@Stateless
+
 public class UserManager {
 
-    @Inject
-    private UserDAO userDAO;
 
-    @Inject
+    private Object userDAO;
+
+
     private EmailSender mail;
 
     public User getById(long id){
-        return userDAO.findById(id);
+        return null;//return userDAO.findById(id);
     }
 
     public List<User> getAll(){
-        return userDAO.findAll();
+        return null; //return userDAO.findAll();
     }
 
     public void insert(User user){
-        userDAO.create(user);
+       /* userDAO.create(user);
         user.addFollowerUser(user);
         user.addFollowingUser(user);
         userDAO.update(user);
@@ -54,49 +54,50 @@ public class UserManager {
                 }
             }
         });
-        emailExecutor.shutdown();
+        emailExecutor.shutdown();*/
       }
 
     public User getByUsername(String username){
-        return userDAO.findByUsername(username);
+       return null;// return userDAO.findByUsername(username);
     }
 
     public void update(User user){
-        userDAO.update(user);
+        //userDAO.update(user);
     }
 
     public void delete(User user){
-        userDAO.delete(user);
+       // userDAO.delete(user);
     }
 
     public User login(User user){
-        User u = userDAO.findByUsername(user.getUsername());
+        /*User u = userDAO.findByUsername(user.getUsername());
         u.setToken(user.getToken());
         //u.setTwoFactor(true);
         userDAO.update(u);
-        return userDAO.login(user);
+        return userDAO.login(user);*/
+        return null;
     }
 
     public List<User> getFollowers(long userId){
-        return userDAO.getFollowers(userId);
+        return null;//return userDAO.getFollowers(userId);
     }
 
     public List<User> getFollowing(long userId){
-        return userDAO.getFollowing(userId);
+        return null;// return userDAO.getFollowing(userId);
     }
 
     public boolean authorize(String token, String username){
 
-        List<String> tkn = userDAO.authorize(token,username);
+        /*List<String> tkn = userDAO.authorize(token,username);
         if(tkn.isEmpty()){
             return false;
         }
-        return tkn.get(0).equals(token);
+        return tkn.get(0).equals(token);*/return false;
 
     }
 
     public List<Object> search(String searchTerm){
-        return userDAO.search(searchTerm);
+        return null;//return userDAO.search(searchTerm);
     }
 }
 

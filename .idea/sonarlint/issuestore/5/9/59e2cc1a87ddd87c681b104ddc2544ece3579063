@@ -1,0 +1,5 @@
+
+Ysquid:UselessImportCheck"0Remove this unused import 'manager.UserManager'.(«›ªÿÿÿÿÿÿ
+Esquid:S1948".Make "loggedInUser" transient or serializable.(è–í¼
+Hsquid:S1948"*Make "tweetDAO" transient or serializable.(˜Á‚“8Öž•Ú´-
+Gsquid:S1948")Make "userDAO" transient or serializable.(ƒ×À±8áà”Ú´-

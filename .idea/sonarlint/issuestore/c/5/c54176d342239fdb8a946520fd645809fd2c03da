@@ -1,0 +1,9 @@
+
+bsquid:UselessImportCheck"9Remove this unused import 'javax.json.JsonObjectBuilder'.(†˜§­ùÿÿÿÿ
+Usquid:UselessImportCheck",Remove this unused import 'javax.json.Json'.(™³Æçþÿÿÿÿ
+_squid:S1192/"HDefine a constant instead of duplicating this literal "content" 5 times.(ÑþÉ¤
+3squid:S21532"Remove the boxing to "Long".(¡ßƒŒ
+[squid:UselessImportCheck
+"0Remove this unused import 'javax.inject.Inject'.(ì–íÔ8ñ–¬Ú´-
+qsquid:S2293€"YReplace the type specification in this constructor call with the diamond operator ("<>").(Á°×¨
+vsquid:S2293‰"YReplace the type specification in this constructor call with the diamond operator ("<>").(•Ï¹øùÿÿÿÿ

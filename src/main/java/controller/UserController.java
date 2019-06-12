@@ -2,7 +2,6 @@ package controller;
 
 import com.google.common.hash.Hashing;
 import com.google.gson.Gson;
-import com.j256.twofactorauth.TimeBasedOneTimePasswordUtil;
 import model.Role;
 import model.User;
 import manager.UserManager;
@@ -20,14 +19,13 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.j256.twofactorauth.TimeBasedOneTimePasswordUtil.*;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Path("/user")
 @ApplicationScoped
 public class UserController {
 
-    @Inject
+
     private UserManager userManager;
 
     @POST
@@ -49,7 +47,7 @@ public class UserController {
         user.setToken(Hashing.sha512().hashString(username, StandardCharsets.UTF_8).toString());
         User u = userManager.login(user);
         u.setPassword("");
-        if(u.isTwoFactor() && validateCurrentNumber(u.getSecretKey(),authc,100000)){
+        if(u.isTwoFactor()){
             return Response.ok(u).build();
         }
         else if(u.isTwoFactor()){
@@ -99,7 +97,7 @@ public class UserController {
         user.setWebsite(createUserRequest.getWebsite());
         user.setLocation(createUserRequest.getLocation());
         user.setBio(createUserRequest.getBio());
-        user.setSecretKey(generateBase32Secret());
+
         user.setAvatar("https://www.jbproductions.nl/images/artiest/new/im_m3_d600_1545_1.jpg");
         userManager.insert(user);
         return Response.ok(user).build();
@@ -191,17 +189,7 @@ public class UserController {
         return Response.status(401).build();
     }
 
-    @POST
-    @Consumes(APPLICATION_JSON)
-    @Produces(APPLICATION_JSON)
-    @Path("2fa")
-    public Response getTwoFactorAuth(JsonObject jsonObject, @HeaderParam("Authorization") String authKey, @HeaderParam("Username") String uname) {
 
-        User u = getUserByUsername(uname);
-        String imgURL = qrImageUrl(u.getUsername(), u.getSecretKey());
-        System.out.println(imgURL);
-        return Response.ok(imgURL).build();
-    }
 
 
 }

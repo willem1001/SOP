@@ -26,10 +26,10 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 @ApplicationScoped
 public class TweetController {
 
-    @Inject
+
     private TweetManager tweetmanager;
 
-    @Inject
+
     private UserManager userManager;
 
     @GET

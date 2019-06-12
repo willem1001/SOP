@@ -1,0 +1,28 @@
+
+isquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(Ž£÷³8”ÒÚ´-
+nsquid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(Íù†Âýÿÿÿÿ8­Ç¡Ú´-
+isquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(º´Ìæ8‚„¡Ú´-
+Msquid:S1172<"/Remove this unused method parameter "username".(Øõô‚8žœŸÚ´-
+Nsquid:S1168V"+Return an empty collection instead of null.(Íù†Âýÿÿÿÿ8­Ç¡Ú´-
+[squid:UselessImportCheck"0Remove this unused import 'javax.inject.Inject'.(ì–íÔ8ÞÃœÚ´-
+Isquid:S1168""+Return an empty collection instead of null.(Ž£÷³8”ÒÚ´-
+esquid:UselessImportCheck"ARemove this unused import 'java.io.UnsupportedEncodingException'.(Ãµ…“
+[squid:UselessImportCheck"0Remove this unused import 'javax.ejb.Stateless'.(Žžä¬8ÞÃœÚ´-
+Zsquid:UselessImportCheck"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ
+Dsquid:S1172Y"&Remove these unused method parameters.(­£ª¼8û›¢Ú´-
+nsquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(û˜êÚýÿÿÿÿ8öåŸÚ´-
+Gsquid:S1172")Remove this unused method parameter "id".(œù…8µüÚ´-
+Psquid:S1172U"-Remove this unused method parameter "userId".(üêÒ¾øÿÿÿÿ8­Ç¡Ú´-
+nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(¯¦†Ÿùÿÿÿÿ8“˜Ú´-
+nsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(øß¢ýúÿÿÿÿ8Óƒ Ú´-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÐÓáÐùÿÿÿÿ8µüÚ´-
+hsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(ûßå8û›¢Ú´-
+isquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(šøÝ8‹´ Ú´-
+Nsquid:S1172H"+Remove this unused method parameter "user".(¤ŸúÍûÿÿÿÿ8ÁÓ Ú´-
+Psquid:S1172Q"-Remove this unused method parameter "userId".(º–Žˆþÿÿÿÿ8‚„¡Ú´-
+isquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(óìêü8žœŸÚ´-
+Isquid:S1168R"+Return an empty collection instead of null.(º´Ìæ8‚„¡Ú´-
+Nsquid:S1068"+Remove this unused "userDAO" private field.(Ê¡ »ýÿÿÿÿ8õÒ¢Ú´-
+isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(êË‚‡8õÒ¢Ú´-
+Osquid:S1172c"1Remove this unused method parameter "searchTerm".(µæÖÁ8õÒ¢Ú´-
+Isquid:S1168d"+Return an empty collection instead of null.(êË‚‡8õÒ¢Ú´-
