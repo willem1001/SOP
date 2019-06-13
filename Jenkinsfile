@@ -62,7 +62,7 @@ pipeline {
                 recipientProviders: [[$class: 'DevelopersRecipientProvider']],
                     subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
 
-            archiveArtifacts "target/**/*"
+            archiveArtifacts "**/"
             junit 'target/surefire-reports/*.xml'
         }
         success {
