@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-Dit werkt nog steeds
+Kokosnoten zijn geen specerijen
   </body>
 </html>
