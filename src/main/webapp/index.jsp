@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-Kokosnoten zijn geen specerijen
+hutsefluts zijn geen specerijen
   </body>
 </html>
